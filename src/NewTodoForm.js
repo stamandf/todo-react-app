@@ -41,7 +41,8 @@ export default class NewTodoForm extends React.Component {
     }
     render() {
         return (
-            <form className="NewTodoForm" onSubmit={this.handleSubmit}>
+
+            <form className={this.state.isEdit ? "NewTodoForm edit" : "NewTodoForm"}  onSubmit={this.handleSubmit}>
                 <label htmlFor='todo'>New Todo</label>
                 <input 
                     id="todo"

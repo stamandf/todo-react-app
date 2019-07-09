@@ -54,9 +54,9 @@ export default class Todo extends React.Component {
                                                 {this.state.text}
                                             </li>
                                             <div className="Todo-buttons">
-                                                <button onClick={this.handleEdit}><i class='fas fa-pen'/></button>
+                                                <button onClick={this.handleEdit}><i className='fas fa-pen'/></button>
                                                 {/* <button onClick={this.handleEdit}>Edit</button> */}
-                                                <button onClick={this.handleDelete}><i class='fas fa-trash'/></button>
+                                                <button onClick={this.handleDelete}><i className='fas fa-trash'/></button>
                                             </div>
                                         </div>
                                         

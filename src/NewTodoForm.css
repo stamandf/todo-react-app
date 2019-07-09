@@ -3,6 +3,10 @@
     display: flex;
     flex-wrap: wrap;
   }
+  .NewTodoForm.edit{
+    display: flex;
+    flex-wrap: wrap;
+  }
   .NewTodoForm label {
     min-width: 100%;
     margin-bottom: 0.5rem;

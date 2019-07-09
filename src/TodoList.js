@@ -70,8 +70,6 @@ export default class TodoList extends React.Component {
                 <ul>
                     {todoList}
                 </ul>
-                
-                {/* <h2>New Todo</h2> */}
                 <NewTodoForm addTodo={this.addTodo}/>
                 
             </div>
