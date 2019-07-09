@@ -43,15 +43,34 @@ export default class NewTodoForm extends React.Component {
         return (
 
             <form className={this.state.isEdit ? "NewTodoForm edit" : "NewTodoForm"}  onSubmit={this.handleSubmit}>
-                <label htmlFor='todo'>New Todo</label>
-                <input 
+                 {!this.state.isEdit && <label htmlFor='todo'>New Todo</label>}
+                <input
+                    autoFocus 
                     id="todo"
                     name="todo"
                     value= {this.state.text}
                     onChange={this.handleChange}
+                    required
                 />
                 {this.state.isEdit ? <button>Update Todo</button> : <button>Add Todo</button>}
             </form>
         )
     }
 }
+
+// render() {
+//     return (
+
+//         <form className={this.state.isEdit ? "NewTodoForm edit" : "NewTodoForm"}  onSubmit={this.handleSubmit}>
+//             <label htmlFor='todo'>New Todo</label>
+//             <input 
+//                 id="todo"
+//                 name="todo"
+//                 value= {this.state.text}
+//                 onChange={this.handleChange}
+//             />
+//             {this.state.isEdit ? <button>Update Todo</button> : <button>Add Todo</button>}
+//         </form>
+//     )
+// }
+// }
