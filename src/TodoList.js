@@ -9,10 +9,7 @@ export default class TodoList extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            todos: [
-                {text:"Feed the Cat", id:uuid(), completed: false}, 
-                {text:"Cancel Videotron Cable", id:uuid(), completed: false} 
-            ]
+            todos: []
         }
     }
 
